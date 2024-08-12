@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Pradeep Kumar Jayaraj</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#education" onclick="toggleMenu()">education</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Pradeep Kumar Jayaraj profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Pradeep Kumar Jayaraj</h1>
+        <p class="section__text__p2">Software Developer | Roboticist | ML Enthusiast </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Pradeep_jayaraj_resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/pradeep-kumar-jayaraj/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/pradeep0036'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/cropped-image.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E. Bachelors Degree - Mechatronics Engineering<br />M.Sc. Masters Degree - Automation and Robotics</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a passionate software developer with a strong background in automation, robotics, and artificial intelligence.
+               Currently based in Munich, I focus on developing innovative AI algorithms and enhancing system automation. My academic and professional journey has fueled my enthusiasm for leveraging AI to solve complex challenges in the engineering domain.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container"> 
+            <div class="timeline">
+              <div class="timeline-item">
+                  <div class="timeline-date">06.2023 - Present</div>
+                  <div class="timeline-content">
+                      <h3 class="job-position">Software Developer</h3>
+                      <h4 class="company-name">Bertrandt Engineering Services GmbH, Munich, Germany</h4>
+                      <ul>
+                          <li>Automation of Sys. 4 and Sys. 5 HiL testing.</li>
+                          <li>Development of software tools for testing and debugging.</li>
+                          <li>Execution of Point on Target (PoT) tests.</li>
+                          <li>Analysis of reflectivity of the targets used in PoT testing.</li>
+                          <li>Development and testing of ADAS systems and AI algorithms.</li>
+                      </ul>
+                  </div>
+              </div>
+          
+              <div class="timeline-item">
+                  <div class="timeline-date">04.2022 - 09.2022</div>
+                  <div class="timeline-content">
+                    <h3 class="job-position">Project Intern</h3>
+                    <h4 class="company-name">Porsche Engineering Services GmbH, Mönsheim, Germany</h4>
+                      <ul>
+                          <li>Programming of the universal robot UR5 with Python for automation.</li>
+                          <li>Design, modeling, and 3D printing of tools.</li>
+                          <li>Manual flashing and testing of control units with Vector Tools.</li>
+                      </ul>
+                  </div>
+              </div>
+          
+              <div class="timeline-item">
+                  <div class="timeline-date">09.2019 - 03.2020</div>
+                  <div class="timeline-content">
+                    <h3 class="job-position">Research Intern</h3>
+                    <h4 class="company-name">6S Mechatronics Inc, Coimbatore, India</h4>
+                      <ul>
+                          <li>Team leader and performed technical calculations for the "Spritzbot" project.</li>
+                          <li>Responsible for 3D modeling of the robot with CREO parametric.</li>
+                          <li>Technical documentation of several IoT projects.</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </div> 
+      </div> 
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#education'"
+      />
+    </section>
+
+    <section id="education">
+      <p class="section__text__p1">See My</p>
+      <h1 class="title">Education</h1>
+      <div class="education-details-container">
+        <div class="about-containers">
+          <div class="details-container"> 
+            <div class="timeline">
+              <div class="timeline-item">
+                  <div class="timeline-date">10.2020 - 04.2023</div>
+                  <div class="timeline-content">
+                      <h3 class="job-position">Master's Degree in Automation and Robotics (M.Sc.)</h3>
+                      <h4 class="company-name">Technical University of Dortmund, Germany</h4>
+                      <ul>
+                        <li>Focus: Computer Vision, Robotics, Machine Learning</li>
+                    </ul>
+                  </div>
+              </div>
+          
+              <div class="timeline-item">
+                  <div class="timeline-date">08.2016 - 04.2020</div>
+                  <div class="timeline-content">
+                    <h3 class="job-position">Bachelor's Degree in Mechatronics Engineering (B.E.)</h3>
+                    <h4 class="company-name">Sri Krishna College of Engineering and Technology, Coimbatore, India</h4>
+                      <ul>
+                        Focus: Embedded Systems, Automotive Engineering
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </div> 
+      </div> 
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">Take a look at my</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+          <div class="about-containers">
+              <div class="details-container">
+                  <h2 class="experience-sub-title">Programming Languages</h2>
+                  <div class="article-container">
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>C</h3>
+                              <p>Basic</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>C++</h3>
+                              <p>Basic</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>R</h3>
+                              <p>Basic</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>Rust</h3>
+                              <p>Basic</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>SQL</h3>
+                              <p>Basic</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>Python</h3>
+                              <p>Experienced</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>MATLAB</h3>
+                              <p>Experienced</p>
+                          </div>
+                      </article>
+                  </div>
+              </div>
+              <div class="details-container">
+                  <h2 class="experience-sub-title">Software and Tools</h2>
+                  <div class="article-container">
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>Microsoft PowerBI</h3>
+                              <p>Basic</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>AWS</h3>
+                              <p>Basic</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>Docker</h3>
+                              <p>Basic</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>ROS</h3>
+                              <p>Basic</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>Eagle</h3>
+                              <p>Basic</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>LabVIEW</h3>
+                              <p>Intermediate</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>PostgreSQL</h3>
+                              <p>Intermediate</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>CODESYS</h3>
+                              <p>Intermediate</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>CREO Parametric</h3>
+                              <p>Experienced</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>Microsoft Office</h3>
+                              <p>Experienced</p>
+                          </div>
+                      </article>
+                      <article>
+                          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                          <div>
+                              <h3>ABB Automation Builder</h3>
+                              <p>Intermediate</p>
+                          </div>
+                      </article>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certifications'" />
+    </section>
+
+    <section id="certifications">
+      <p class="section__text__p1">Check Out My Recent</p>
+      <h1 class="title">Certifications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Deep Learning Specialization</h2>
+            <h3 class="company-name">Coursera</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.coursera.org/account/accomplishments/specialization/9BUJ7VAQ44V6'"
+              >
+                Credential
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Machine Learning</h2>
+            <h3 class="company-name">Coursera</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.coursera.org/account/accomplishments/certificate/C8KP7UYDJL52'"
+              >
+                Credential
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Learn Advacnced C++ Programming</h2>
+            <h3 class="company-name">Udemy</h3>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ude.my/UC-86eae4b4-97a6-4ba3-8544-01586358bbe1'"
+              >
+                Credential
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">SQL</h2>
+            <h3 class="company-name">Udemy</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ude.my/UC-5bcffb78-c8cb-4306-8e17-a36ba9607f24'"
+              >
+                Credential
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">AWS</h2>
+            <h3 class="company-name">Udemy</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ude.my/UC-8b505b64-2947-4d6e-b338-c18eaac0d295'"
+              >
+                Credential
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Rust</h2>
+            <h3 class="company-name">Udemy</h3>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ude.my/UC-dee106e3-e34d-488f-90af-9c63252811e5'"
+              >
+                Credential
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/thesis.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">3D Multi-Modal Object Detec on by an End-to-End Trainable Raw Sparse Lidar and Pseudo-Lidar Point Cloud Fusion Architecture</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/group_project.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Event-triggered Distributed Model Predic ve Control (DMPC)</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/spritzbot.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Spritzbot</h2>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">harishpradeep036@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="phone icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="callme at">+49 15752651201</a></p>
+        </div>
+        <!-- <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/pradeep-kumar-jayaraj/">LinkedIn</a></p>
+        </div> -->
+      </div>
+      <h2 class="address-details-heading">My Location</h2>
+      <div class="map-container">
+          <!-- Google Maps Embed Code -->
+          <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.054545761552!2d11.55670831589391!3d48.1505639792245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e767b7b8c0f9b%3A0x7c1b8c0b8c0b8c0b!2sSchwindstr.%205%2C%2080798%20M%C3%BCnchen%2C%20Germany!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" 
+              width="250" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+          </iframe>
+      </div>
+      <div class="address-details">
+          <p><strong>Address:</strong> Schwindstr. 5, 80798, Munich, Germany</p>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
