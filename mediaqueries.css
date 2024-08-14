@@ -1,3 +1,23 @@
+@media screen and (max-width: 1800px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+    height: fit-content;
+    display: flex;
+  }
+  #contact,
+  #experience,
+  #education,
+  #certifications,
+  #skills,
+  #projects {
+    height: fit-content;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -5,10 +25,17 @@
   }
   .about-containers {
     flex-wrap: wrap;
+    height: fit-content;
+    display: flex;
   }
   #contact,
+  #experience,
+  #education,
+  #certifications,
   #projects {
+    flex-wrap: wrap;
     height: fit-content;
+    display: flex;
   }
 }
 

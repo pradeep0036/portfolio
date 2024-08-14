@@ -374,6 +374,15 @@ article .icon {
   position: relative;
 }
 
+#certifications {
+  position: relative;
+}
+
+#skills {
+  position: relative;
+}
+
+
 .education-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
@@ -522,9 +531,6 @@ footer p {
   margin: px 0;
 }
 
-#certifications {
-  position: relative;
-}
 
 #location {
   padding: 5px;
